@@ -1,0 +1,11 @@
+onPressSayHello: function(){
+  var name = this.getView().byId("idInpName").getValue();
+  var displayText = this.getView().byId("idDisplayText");
+
+  displayText.setText("Hello " + name + ". Welcome to the Graduate Training Programme.");          
+},
+
+onPressClear: function(){
+  var displayText = this.getView().byId("idDisplayText");
+  displayText.setText("");
+}
