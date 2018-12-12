@@ -1,0 +1,8 @@
+	<VBox>
+		<Input id="idInpName" value="World" placeholder="Please enter your name here..."></Input>
+		<HBox>
+			<Button text="Say Hello" press="onPressSayHello"></Button>
+			<Button text="Clear" press="onPressClear"></Button>
+		</HBox>
+		<Text id="idDisplayText" text=""></Text>
+	</VBox>
