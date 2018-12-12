@@ -1,0 +1,1 @@
+<Input id="idInputName" value="{/recipient/name}" placeholder="Enter your name here..." width="20rem"></Input>
