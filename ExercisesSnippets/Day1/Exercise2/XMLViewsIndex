@@ -1,7 +1,7 @@
 <script>
   sap.ui.getCore().attachInit(function() {
     sap.ui.xmlview({
-      viewName: "com.e2.xmlviews.view.App"
+      viewName: "com.sap.E02_XMLViews.view.App"
     }).placeAt("content");
   });
 </script>
