@@ -1,7 +1,0 @@
-<VBox>
-  <Text text="Hello World"></Text>
-  <HBox>
-    <Button text="Say Hello"></Button>
-    <Button text="Clear"></Button>
-  </HBox>
-</VBox>
