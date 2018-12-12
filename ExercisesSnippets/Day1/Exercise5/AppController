@@ -1,0 +1,10 @@
+onInit: function() {
+  // set data model on view
+  var oData = {
+    recipient: {
+      name: "John Doe"
+    }
+  };
+  var oModel = new sap.ui.model.json.JSONModel(oData);
+  this.getView().setModel(oModel);
+},
