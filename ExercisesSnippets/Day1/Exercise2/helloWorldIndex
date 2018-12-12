@@ -4,4 +4,4 @@
       text: "Hello World!!!"
     }).placeAt("content");
   });
-</script>
+</script> 
