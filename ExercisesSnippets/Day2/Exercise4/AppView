@@ -1,0 +1,26 @@
+	<App>
+		<pages>
+			<Page title="Hello World App">
+				<content>
+					<Panel>
+						<content>
+							<VBox>
+								<Text text="Your name"></Text>
+								<Input id="idInputName" value="{/recipient/name}" placeholder="Enter your name here..." width="20rem"></Input>
+								<HBox>
+									<Button text="Say Hello" press="onPressSayHello"></Button>
+									<Button text="Clear" press="onClearPress"></Button>
+								</HBox>
+								<Text id="idOutputText" text=""></Text>
+							</VBox>
+						</content>
+					</Panel>
+				</content>
+				<footer>
+					<Bar>
+						
+					</Bar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
