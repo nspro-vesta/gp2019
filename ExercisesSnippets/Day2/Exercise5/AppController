@@ -1,0 +1,3 @@
+onPressBuy: function() {
+  MessageToast.show("Item added to the cart");
+}
