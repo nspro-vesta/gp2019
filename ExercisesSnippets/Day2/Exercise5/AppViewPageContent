@@ -1,0 +1,37 @@
+<ObjectHeader icon="{/product/ProductPicUrl}" iconDensityAware="false" title="{/product/Name}" number="{/product/Price}"
+  numberUnit="{/product/Currency}">
+  <statuses>
+    <ObjectStatus text="{/product/Availability}" state="Success"/>
+  </statuses>
+  <attributes>
+    <ObjectAttribute text="Screen Size: {/product/ScreenSize}"/>
+    <ObjectAttribute text="Storage: {/product/Storage}"/>
+    <ObjectAttribute text="Processor: {/product/Processor}"/>
+  </attributes>
+</ObjectHeader>
+<Panel>
+  <content>
+    <VBox>
+      <items justifyContent="Center" alignItems="Center">
+        <HBox justifyContent="Center" alignItems="Center">
+          <items>
+            <Text text="Your name" class="sapUiTinyMarginBeginEnd"></Text>
+            <Input id="idInputName" value="" placeholder="Enter your name here..." width="20rem"></Input>
+          </items>
+        </HBox>
+        <HBox justifyContent="Center" alignItems="Center">
+          <items>
+            <Text text="Your Email" class="sapUiTinyMarginBeginEnd"></Text>
+            <Input  value="" placeholder="Enter your email id here..." width="20rem"></Input>
+          </items>
+        </HBox>
+        <HBox justifyContent="Center" alignItems="Center">
+          <items>
+          <Text text="Your Contact" class="sapUiTinyMarginBeginEnd"></Text>
+            <Input  value="" placeholder="Enter your contact number..." width="20rem"></Input>
+          </items>
+        </HBox>
+      </items>
+    </VBox>
+  </content>
+</Panel>
