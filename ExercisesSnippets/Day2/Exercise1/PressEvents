@@ -1,0 +1,12 @@
+onPressSayHello: function() {
+  var name = this.getView().byId("idInputName").getValue();
+  var outputText = this.getView().byId("idOutputText");
+  outputText.setText("Hello " + name + ". Welcome to the Graduate Training Programme");
+  MessageToast.show("A message is displayed");
+},
+
+onClearPress: function() {
+  var outputText = this.getView().byId("idOutputText");
+  outputText.setText("");
+  MessageToast.show("A message is cleared");
+}
