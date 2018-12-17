@@ -1,0 +1,7 @@
+<footer>
+  <Bar>
+    <contentRight>
+      <Button text="Buy" press="onPressBuy"></Button>
+    </contentRight>
+  </Bar>
+</footer>
