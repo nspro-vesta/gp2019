@@ -1,0 +1,18 @@
+<ObjectHeader icon="{/product/ProductPicUrl}" iconDensityAware="false" title="{/product/Name}"
+  number="{ 
+    parts: [{path: '/product/Price'}, {path: '/product/Currency'}],
+    type: 'sap.ui.model.type.Currency',
+    formatOptions: {
+      showMeasure: false
+    }
+  }"
+  numberUnit="{/product/Currency}">
+  <statuses>
+    <ObjectStatus text="{/product/Availability}" state="Success"/>
+  </statuses>
+  <attributes>
+    <ObjectAttribute text="Screen Size: {/product/ScreenSize}"/>
+    <ObjectAttribute text="Storage: {/product/Storage}"/>
+    <ObjectAttribute text="Processor: {/product/Processor}"/>
+  </attributes>
+</ObjectHeader>
