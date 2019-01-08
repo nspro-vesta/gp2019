@@ -1,0 +1,15 @@
+var oData = {
+  product: {
+    "ProductPicUrl" : "https://images-na.ssl-images-amazon.com/images/I/71iFVjrzsLL._SL1500_.jpg",
+    "Name" : "Macbook Air",
+    "Price" : "3749",
+    "Currency" : "USD",
+    "Availability" : "In Stock",
+    "ScreenSize" : "13 inches",
+    "Storage" : "128 GB Fast SSD storage",
+    "Processor" : "Dual-core Intel Core i5 processor"
+  },
+  coupons: {
+    "present" : false
+  }
+};
