@@ -1,0 +1,6 @@
+"models": {
+  "": {
+    "type": "sap.ui.model.json.JSONModel",
+    "dataSource": "init_data_alias"
+  }
+}
