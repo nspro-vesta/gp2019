@@ -1,0 +1,11 @@
+<HBox justifyContent="Center" alignItems="Center">
+  <items>
+    <Text text="Coupon Code" class="sapUiTinyMarginBeginEnd"></Text>
+    <Input value="" placeholder="Enter your coupon code..." width="20rem" enabled="{/coupons/present}"></Input>
+  </items>
+</HBox>
+<HBox justifyContent="Center" alignItems="Center">
+  <items>
+    <CheckBox text="I have a coupon code" selected="{/coupons/present}" />
+  </items>
+</HBox>
