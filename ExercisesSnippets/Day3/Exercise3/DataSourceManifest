@@ -1,0 +1,6 @@
+	"dataSources": {
+    "init_data_alias": {
+      "uri": "model/mock.json",
+      "type": "JSON"
+    }
+  }
