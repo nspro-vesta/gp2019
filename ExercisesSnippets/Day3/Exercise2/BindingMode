@@ -1,0 +1,1 @@
+oModel.setDefaultBindingMode(sap.ui.model.BindingMode.OneWay);
