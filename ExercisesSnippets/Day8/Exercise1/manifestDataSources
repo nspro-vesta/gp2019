@@ -1,0 +1,8 @@
+"main": {
+  "uri": "/",
+  "type": "OData",
+  "settings": {
+    "odataVersion": "2.0",
+    "localUri": "localService/metadata.xml"
+  }
+}
