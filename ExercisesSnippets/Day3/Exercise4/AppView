@@ -1,0 +1,20 @@
+<IconTabBar id="idIconTabBarMulti" class="sapUiResponsiveContentPadding">
+  <items>
+    <IconTabFilter icon="sap-icon://hint" text="Info">
+      <List items="{/product/Specs}" >
+        <items>
+          <DisplayListItem label="{specName}" value="{specValue}"/>
+        </items>
+      </List>
+    </IconTabFilter>
+    <IconTabFilter icon="sap-icon://notes" text="Items">
+      <Text text="Notes go here ..."/>
+    </IconTabFilter>
+    <IconTabFilter icon="sap-icon://attachment" text="Attachments">
+      <Text text="Attachments go here ..."/>
+    </IconTabFilter>
+    <IconTabFilter icon="sap-icon://group" text="Group">
+      <Text text="People content goes here ..."/>
+    </IconTabFilter>
+  </items>
+</IconTabBar>
