@@ -1,0 +1,8 @@
+<Panel id="idPanel" binding="{/product/Salesrecord}">
+  <content>
+    <VBox>
+      <Text text="Units Sold: {TotalSold}"></Text>
+      <Text text="Units Available: {TotalAvailable}"></Text>
+    </VBox>
+  </content>
+</Panel>
