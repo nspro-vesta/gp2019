@@ -1,0 +1,62 @@
+{
+	"product": {
+		"ProductPicUrl": "https://images-na.ssl-images-amazon.com/images/I/71iFVjrzsLL._SL1500_.jpg",
+		"Name": "Macbook Air",
+		"Price": "3749",
+		"Currency": "MYR",
+		"Availability": "In Stock",
+		"ScreenSize": "13 inches",
+		"Storage": "128 GB Fast SSD storage",
+		"Processor": "Dual-core Intel Core i5 processor",
+		"Specs" : [ 
+			{
+				"specName" : "CPU",
+				"specValue": "1.6GHz dual-core Intel Core i5 (Turbo Boost up to 2.7GHz) with 3MB shared L3 cache"
+			},
+			{
+				"specName": "Graphics",
+				"specValue" : "Intel HD Graphics 6000"
+			},
+			{
+				"specName" : "RAM",
+				"specValue" : "8GB 1600MHz DDR3"
+			},
+			{
+				"specName" : "Screen",
+				"specValue" : "13.3-inch, LED-backlit glossy widescreen display (1440 x 900)"
+			},
+			{
+				"specName" : "Storage",
+				"specValue" : "256GB PCIe-based flash storage (configurable to 512GB flash storage)"
+			},
+			{
+				"specName" : "Optical Drive",
+				"specValue" : "Not included"
+			},
+			{
+				"specName" : "Ports",
+				"specValue" : "Two USB 3.0 ports (up to 5Gbps); Thunderbolt 2 port (up to 20Gbps); MagSafe 2 power port; SDXC card slot"
+			},
+			{
+				"specName" : "Connectivity",
+				"specValue" : "802.11ac Wi-Fi networking; IEEE 802.11a/b/g/n compatible; Bluetooth 4.0 wireless technology"
+			},
+			{
+				"specName" : "Camera",
+				"specValue" : "720p FaceTime HD camera"
+			},
+			{
+				"specName" : "Weight",
+				"specValue" : "1.35kg (2.96 pounds)"
+			},
+			{
+				"specName" : "Size",
+				"specValue" : "32.5 x 22.7 x 1.7 cm (W x D x H)"
+			}
+		],
+		"Salesrecord" : {
+			"TotalSold" : "150",
+			"TotalAvailable" : "450"
+		}
+	}
+}
