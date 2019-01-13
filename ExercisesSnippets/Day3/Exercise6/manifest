@@ -6,7 +6,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "com.e17.resourcemodel.i18n.i18n"
+					"bundleName": "yourNamespace.i18n.i18n"
 				}
 			}
 		}
