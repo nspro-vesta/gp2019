@@ -1,0 +1,63 @@
+<mvc:View controllerName="com.e17.resourcemodel.controller.App" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>PageTitle}">
+				<content>
+					<ObjectHeader icon="{/product/ProductPicUrl}" iconDensityAware="false" title="{/product/Name}"
+						number="{ 
+							parts: [{path: '/product/Price'}, {path: '/product/Currency'}],
+							type: 'sap.ui.model.type.Currency',
+							formatOptions: {
+								showMeasure: false
+							}
+						}"
+						numberUnit="{/product/Currency}">
+						<statuses>
+							<ObjectStatus text="{/product/Availability}" state="Success"/>
+						</statuses>
+						<attributes>
+							<ObjectAttribute text="Screen Size: {/product/ScreenSize}"/>
+							<ObjectAttribute text="Storage: {/product/Storage}"/>
+							<ObjectAttribute text="Processor: {/product/Processor}"/>
+						</attributes>
+					</ObjectHeader>
+					<IconTabBar id="idIconTabBarMulti" class="sapUiResponsiveContentPadding">
+						<items>
+							<IconTabFilter icon="sap-icon://hint" text="{i18n>InfoTab}">
+								<List items="{/product/Specs}" >
+									<items>
+										<DisplayListItem label="{specName}" value="{specValue}"/>
+									</items>
+								</List>
+							</IconTabFilter>
+							<IconTabFilter icon="sap-icon://notes" text="{i18n>Items}">
+								<Panel id="idPanel" binding="{/product/Salesrecord}">
+									<content>
+										<VBox>
+											<Text text="Units Sold: {TotalSold}"></Text>
+											<Text text="Units Available: {TotalAvailable}"></Text>
+										</VBox>
+									</content>
+								</Panel>
+							</IconTabFilter>
+							<IconTabFilter icon="sap-icon://attachment" text="{i18n>AttachmentsTab}">
+								<Text text="Attachments go here ..."/>
+							</IconTabFilter>
+							<IconTabFilter icon="sap-icon://group" text="{i18n>GroupTab}">
+								<Text text="People content goes here ..."/>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</content>
+				<footer>
+					<Bar>
+						<contentRight>
+							<Button text="Buy" press="onPressBuy"></Button>
+						</contentRight>
+					</Bar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
