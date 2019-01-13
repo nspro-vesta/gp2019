@@ -1,0 +1,4 @@
+"": {
+  "type": "sap.ui.model.odata.ODataModel",
+  "dataSource": "main"
+},
