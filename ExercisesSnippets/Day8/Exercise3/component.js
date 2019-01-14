@@ -1,11 +1,11 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-	"com/e15/aggregationbinding/model/models"
+	"yourNamespace/model/models"
 ], function(UIComponent, Device, models) {
 	"use strict";
 
-	return UIComponent.extend("com.e15.aggregationbinding.Component", {
+	return UIComponent.extend("yourNamespace.Component", {
 
 		metadata: {
 			manifest: "json"
