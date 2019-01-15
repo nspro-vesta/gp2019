@@ -1,0 +1,35 @@
+<mvc:View controllerName="com.e15.aggregationbinding.controller.App" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="A Simple SAPUI5 App">
+				<content>
+					<SearchField width="100%" search="onSearchPress"/>
+					
+					<List items="{/PurchaseOrders}" headerText="Purchase Orders">
+						<items>
+							<ObjectListItem title="{PoId}" 
+								number="{NetAmount}"
+								numberUnit="{CurrencyCode}">
+								<firstStatus>
+									<ObjectStatus text="{LifecycleStatus}" state="Success"/>
+								</firstStatus>
+								<attributes>
+									<ObjectAttribute text="{CreatedAt}"/>
+									<ObjectAttribute text="{CreatedBy}"/>
+								</attributes>
+							</ObjectListItem>
+						</items>
+					</List>
+				</content>
+				<footer>
+					<Bar>
+						<contentRight>
+							
+						</contentRight>
+					</Bar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
