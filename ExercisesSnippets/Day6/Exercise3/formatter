@@ -1,0 +1,11 @@
+formatStatus: function(value){
+  if(value === "OP"){
+    return "None";
+  }
+  else if(value === "AP"){
+    return "Success";
+  }
+  else if(value === "RJ"){
+    return "Error";
+  }
+}
