@@ -1,0 +1,1 @@
+<ObjectStatus text="{LifecycleStatus}" state="{ path: 'LifecycleStatus', formatter: '.formatStatus' }"/>
