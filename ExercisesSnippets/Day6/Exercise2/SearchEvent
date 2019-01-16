@@ -1,0 +1,13 @@
+onSearchPress: function(oEvent){
+	// build filter array
+  var aFilter = [];
+  var sQuery = oEvent.getParameter("query");
+  if (sQuery) {
+    aFilter.push(new Filter("PoId", FilterOperator.Contains, sQuery));
+  }
+
+  // filter binding
+  var list = this.getView().byId("idList");
+  var binding = list.getBinding("items");
+  binding.filter(aFilter);
+}
