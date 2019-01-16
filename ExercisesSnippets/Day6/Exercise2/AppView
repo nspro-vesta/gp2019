@@ -1,0 +1,28 @@
+<Page title="A Simple SAPUI5 App">
+  <content>
+    <SearchField width="100%" search="onSearchPress"/>
+
+    <List id="idList" items="{/PurchaseOrders}" headerText="Purchase Orders">
+      <items>
+        <ObjectListItem title="{PoId}" 
+          number="{NetAmount}"
+          numberUnit="{CurrencyCode}">
+          <firstStatus>
+            <ObjectStatus text="{LifecycleStatus}" state="Success"/>
+          </firstStatus>
+          <attributes>
+            <ObjectAttribute text="{CreatedAt}"/>
+            <ObjectAttribute text="{CreatedBy}"/>
+          </attributes>
+        </ObjectListItem>
+      </items>
+    </List>
+  </content>
+  <footer>
+    <Bar>
+      <contentLeft>
+        <Button icon="sap-icon://sort" press="onSortPress"></Button>
+      </contentLeft>
+    </Bar>
+  </footer>
+</Page>
