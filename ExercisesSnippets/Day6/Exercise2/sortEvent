@@ -1,0 +1,18 @@
+onInit: function() {
+  this.sortOrder = true;
+},
+
+onSortPress: function(oEvent){
+  var list = this.getView().byId("idList");
+  var binding = list.getBinding("items");
+  var oSorter;
+  if(this.sortOrder){
+    oSorter = new Sorter("PoId", true);
+    this.sortOrder = false;
+  }
+  else if(!this.sortOrder){
+    oSorter = new Sorter("PoId", false);
+    this.sortOrder = true;
+  }
+  binding.sort(oSorter);
+},
