@@ -1,0 +1,3 @@
+<Column minScreenWidth="Small" demandPopin="false" visible="{device>/system/phone}">
+  <Text text="{i18n>TaxAmount}"/>
+</Column>
