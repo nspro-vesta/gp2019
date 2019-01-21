@@ -1,0 +1,2 @@
+showMarkers="true"
+markFlagged="{= ${NetAmount} > 5000}"
