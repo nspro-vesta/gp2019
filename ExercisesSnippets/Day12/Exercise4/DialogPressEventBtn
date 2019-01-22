@@ -1,0 +1,7 @@
+onPressConfirm: function () {
+  this._getDialog().close();
+},
+
+onPressCancel: function () {
+  this._getDialog().close();
+}
