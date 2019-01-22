@@ -1,0 +1,14 @@
+onCreatePress: function () {
+  this._getDialog().open();
+},
+
+_getDialog: function () {
+  // create a fragment with dialog, and pass the selected data
+  if (!this.dialog) {
+    // This fragment can be instantiated from a controller as follows:
+    this.dialog = sap.ui.xmlfragment("idFragment", "yourNamespace.view.CreateDialog", this);
+    //debugger;
+  }
+  //debugger;
+  return this.dialog;
+},
