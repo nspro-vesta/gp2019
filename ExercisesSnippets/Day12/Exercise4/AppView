@@ -1,0 +1,3 @@
+<contentRight>
+  <Button text="Create" type="Accept" press="onCreatePress"></Button>
+</contentRight>
