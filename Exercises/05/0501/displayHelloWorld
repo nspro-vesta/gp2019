@@ -1,7 +1,7 @@
 <script>
   sap.ui.getCore().attachInit(function() {
-    new sap.m.Text({
-      text: "Hello World!!!"
-    }).placeAt("content");
+    var oText = new sap.m.Text();
+    oText.setText("Hello World!!!");
+    oText.placeAt("content");
   });
 </script>
