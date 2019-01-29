@@ -1,0 +1,8 @@
+var oImage2 = new sap.m.Image({
+  src: "images/fiori.png",
+  width: "10rem",
+  height: "10rem",
+  press: function(){
+    alert("Hello Fiori!");
+  }
+});
