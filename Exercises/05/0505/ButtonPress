@@ -1,0 +1,7 @@
+onPressSaveBtn: function(){
+  var radioBtnGrp = this.getView().byId("idRadioGrp");
+  var selectedRadioBtn = radioBtnGrp.getSelectedButton();
+  var text = selectedRadioBtn.getText();
+
+  alert(text);
+}
