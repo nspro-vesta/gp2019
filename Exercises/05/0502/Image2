@@ -1,0 +1,10 @@
+var onPressImage = function(){
+  alert("Hello UI5!");
+};
+
+var oImage = new sap.m.Image({
+  src: "images/ui5.jpg",
+  width: "10rem",
+  height: "10rem",
+  press: onPressImage
+});
