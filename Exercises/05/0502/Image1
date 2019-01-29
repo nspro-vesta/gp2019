@@ -1,0 +1,9 @@
+<script>
+  sap.ui.getCore().attachInit(function () {
+    var oImage = new sap.m.Image();
+    oImage.setSrc("images/ui5.jpg");
+    oImage.setWidth("10rem");
+    oImage.setHeight("10rem");
+    oImage.placeAt("content");
+  });
+</script>
