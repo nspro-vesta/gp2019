@@ -1,0 +1,11 @@
+<ObjectHeader icon="{/product/ProductPicUrl}" iconDensityAware="false" title="{/product/Name}" number="{/product/Price}"
+  numberUnit="{/product/Currency}">
+  <statuses>
+    <ObjectStatus text="{/product/Availability}" state="Success"/>
+  </statuses>
+  <attributes>
+    <ObjectAttribute text="Screen Size: {/product/ScreenSize}"/>
+    <ObjectAttribute text="Storage: {/product/Storage}"/>
+    <ObjectAttribute text="Processor: {/product/Processor}"/>
+  </attributes>
+</ObjectHeader>
