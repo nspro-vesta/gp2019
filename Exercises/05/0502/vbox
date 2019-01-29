@@ -1,0 +1,8 @@
+new sap.m.VBox({
+  items: [
+    oImage,
+    oImage2,
+    oLabel,
+    oRadioButtonGroup
+  ]
+}).placeAt("content")
