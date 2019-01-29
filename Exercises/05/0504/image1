@@ -1,0 +1,6 @@
+<Image
+  src = "images/ui5.jpg"
+  width = "10rem"
+  height = "10rem"
+  press= "onPressImage">
+</Image>
