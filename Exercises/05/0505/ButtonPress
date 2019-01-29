@@ -3,5 +3,6 @@ onPressSaveBtn: function(){
   var selectedRadioBtn = radioBtnGrp.getSelectedButton();
   var text = selectedRadioBtn.getText();
 
-  alert(text);
+  var message = "You like the " + text + " better!!";
+  alert(message);
 }
