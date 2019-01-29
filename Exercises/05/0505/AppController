@@ -1,0 +1,7 @@
+onPressImage: function(){
+  alert("Hello UI5!");
+},
+
+onPressImage2: function(){
+  alert("Hello Fiori!");
+}
