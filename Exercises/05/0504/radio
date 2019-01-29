@@ -1,0 +1,7 @@
+<RadioButtonGroup
+  columns= "2">
+  <buttons>
+    <RadioButton text="UI5 Logo"></RadioButton>
+    <RadioButton text="Fiori Logo"></RadioButton>
+  </buttons>
+</RadioButtonGroup>
