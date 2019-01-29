@@ -1,0 +1,16 @@
+var oRadioButton = new sap.m.RadioButton({
+  text: "UI5 Logo"
+});
+
+var oRadioButton2 = new sap.m.RadioButton({
+  text: "Fiori Logo"
+});
+
+var oRadioButtonGroup = new sap.m.RadioButtonGroup({
+  columns: 2
+});
+
+oRadioButtonGroup.addButton(oRadioButton);
+oRadioButtonGroup.addButton(oRadioButton2);
+oRadioButtonGroup.placeAt("content");
+				
