@@ -1,8 +1,10 @@
-new sap.m.VBox({
+var vbox = new sap.m.VBox({
   items: [
     oImage,
     oImage2,
     oLabel,
     oRadioButtonGroup
   ]
-}).placeAt("content")
+});
+
+vbox.placeAt("content")
