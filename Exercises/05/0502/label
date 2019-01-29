@@ -1,0 +1,3 @@
+var oLabel = new sap.m.Label("rbgLabel", {
+  text: "Which logo do you like better?"
+}).placeAt("content");
