@@ -1,0 +1,7 @@
+<script>
+  sap.ui.getCore().attachInit(function() {
+    sap.ui.core.mvc.JSView({
+      viewName: "com.sap.E01_MVC_JSView.view.App"
+    }).placeAt("content");
+  });
+</script>
