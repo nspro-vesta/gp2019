@@ -23,12 +23,19 @@ sap.ui.define([
 			// call the base component's init function
 			UIComponent.prototype.init.apply(this, arguments);
 
-			// set data model
 			var oData = {
-				recipient: {
-					name: "World"
+				product: {
+					"ProductPicUrl" : "https://images-na.ssl-images-amazon.com/images/I/71iFVjrzsLL._SL1500_.jpg",
+					"Name" : "Macbook Air",
+					"Price" : "3749",
+					"Currency" : "MYR",
+					"Availability" : "In Stock",
+					"ScreenSize" : "13 inches",
+					"Storage" : "128 GB Fast SSD storage",
+					"Processor" : "Dual-core Intel Core i5 processor"
 				}
 			};
+			
 			var oModel = new JSONModel(oData);
 			this.setModel(oModel);
 		}
