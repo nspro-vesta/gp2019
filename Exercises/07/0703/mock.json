@@ -1,0 +1,23 @@
+{
+	"product": {
+		"ProductPicUrl": "https://images-na.ssl-images-amazon.com/images/I/71iFVjrzsLL._SL1500_.jpg",
+		"Name": "Macbook Air",
+		"Price": "3749",
+		"Currency": "MYR",
+		"Availability": "In Stock",
+		"ScreenSize": "13 inches",
+		"Storage": "128 GB Fast SSD storage",
+		"Processor": "Dual-core Intel Core i5 processor"
+	},
+	"supplier": {
+		"SupplierName": "FutureNet Concept Store",
+		"Address": "11, City Center, Petaling Jaya",
+		"PinCode": "47800",
+		"City": "KualaLumpur",
+		"Country": "Malaysia",
+		"supplyDate": "2018/12/30"
+	},
+	"coupons": {
+		"present": false
+	}
+}
