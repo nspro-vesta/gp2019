@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta charset="UTF-8">
-		<title>E0501_HelloWorld</title>
+		<title>mySecondApp</title>
 		<script id="sap-ui-bootstrap"
 		  src="../../resources/sap-ui-core.js"
 		  data-sap-ui-async="true"
