@@ -3,7 +3,7 @@
 	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
 		<Schema Namespace="S1" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
 			xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
-			<EntityType Name="PurchaseOrderSet">
+			<EntityType Name="PurchaseOrder">
 				<Key>
 					<PropertyRef Name="PoId"/>
 				</Key>
@@ -25,7 +25,7 @@
 			</EntityType>
 			
 			<EntityContainer Name="PurchaseEntities" m:IsDefaultEntityContainer="true">
-				<EntitySet EntityType="S1.PurchaseOrderSet" Name="PurchaseOrders"/>
+				<EntitySet EntityType="S1.PurchaseOrder" Name="PurchaseOrderSet"/>
 			</EntityContainer>
 		</Schema>
 	</edmx:DataServices>
