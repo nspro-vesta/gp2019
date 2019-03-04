@@ -1,0 +1,46 @@
+onBatchPress: function () {
+			var path = "/PurchaseOrderSet";
+			var oModel= this.getView().getModel();
+			oModel.setUseBatch(true);
+			oModel.setDeferredGroups(["foo"]);
+			var mParameters = {
+				groupId:"foo",
+				success: function(odata, resp){ 
+					sap.m.MessageToast.show(resp); 
+				},
+				error: function(odata, resp){
+					sap.m.MessageToast.show(resp); 
+				}
+			};
+			
+			var oEntry1 = {
+				"PoId": "300005",
+				"CreatedBy": "Arshad Feeroz",
+				"CreatedAt": new Date(),
+				"ChangedBy": "Arshad",
+				"ChangedAt": new Date(),
+				"CurrencyCode": "INR",
+				"GrossAmount": "100.00",
+				"NetAmount": "80.00",
+				"TaxAmount": "20.00",
+				"OverallStatus": "OP"
+			};
+			var oEntry2 = {
+				"PoId": "300006",
+				"CreatedBy": "Karishma Bisht",
+				"CreatedAt": new Date(),
+				"ChangedBy": "Arshad",
+				"ChangedAt": new Date(),
+				"CurrencyCode": "INR",
+				"GrossAmount": "100.00",
+				"NetAmount": "90.00",
+				"TaxAmount": "10.00",
+				"OverallStatus": "OP"
+			};
+				
+			oModel.create(path, oEntry1, mParameters);
+			oModel.create(path, oEntry2, mParameters);
+			
+			oModel.submitChanges(mParameters);
+		
+		}
