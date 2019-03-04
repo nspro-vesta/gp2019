@@ -1,0 +1,23 @@
+<f:SimpleForm id="idFormCreate" minWidth="1024" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout"
+									title="Create Purchase Order" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1" class="editableForm">
+									<f:content>
+										<Label text="PoId"/>
+										<Input id="idPoidCreate"/>
+										<Label text="Gross Amount"/>
+										<Input id="idGrossAmtCreate"/>
+										<Label text="Tax Amount"/>
+										<Input id="idTaxAmtCreate"/>
+										<Label text="Net Amount"/>
+										<Input id="idNetAmtCreate"/>
+										<Label text="Currency"/>
+										<Select id="idCurrCreate" width="100%" forceSelection="false">
+											<items>
+												<core:Item text="EUR"></core:Item>
+												<core:Item text="MYR"></core:Item>
+												<core:Item text="USD"></core:Item>
+											</items>
+										</Select>
+										<Label></Label>
+										<Button text="Submit" press="onCreatePress"></Button>
+									</f:content>
+								</f:SimpleForm>
