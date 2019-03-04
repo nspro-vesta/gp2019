@@ -1,0 +1,15 @@
+<EntityType Name="PurchaseOrderItem" sap:content-version="1">
+				<Key>
+					<PropertyRef Name="PoId"/>
+					<PropertyRef Name="ItemNo"/>
+				</Key>
+				<Property Name="PoId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="POID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="ProductId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="PRODUCT_ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="ProductName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="PRODUCT_NAME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="ItemNo" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="ITEMNO" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="ItemQuantity" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="ITEMQUANTITY" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="CurrencyCode" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="CURRENCYCODE" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="GrossAmount" Type="Edm.Decimal" Nullable="false" Precision="10" Scale="2" sap:unicode="false" sap:label="GROSSAMOUNT" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="NetAmount" Type="Edm.Decimal" Nullable="false" Precision="10" Scale="2" sap:unicode="false" sap:label="NETAMOUNT" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+				<Property Name="TaxAmount" Type="Edm.Decimal" Nullable="false" Precision="10" Scale="2" sap:unicode="false" sap:label="TAXAMOUNT" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+			</EntityType>
