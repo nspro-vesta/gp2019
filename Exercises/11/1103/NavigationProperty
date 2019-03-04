@@ -1,0 +1,1 @@
+<NavigationProperty Name="OrderToItems" Relationship="S1.OrderToItems" FromRole="FromRole_OrderToItems" ToRole="ToRole_OrderToItems"/>
