@@ -1,0 +1,21 @@
+onSubmitApproval: function (oEvent) {
+			this.approvalDialog.close();
+			var sObjectId = oEvent.getSource().getBindingContext().getProperty().PoId;
+			var oPayload = {
+				"PoId": sObjectId,
+				"Status": "AP"
+			};
+			var oModel = this.getView().getModel();
+
+			oModel.callFunction("/PurchaseOrderApproval", {
+				method: "POST",
+				urlParameters: oPayload,
+				success: function (oData, response) {
+					sap.m.MessageToast.show("success");
+					this.getView().getElementBinding().refresh(true);
+				},
+				error: function (oError) {
+					
+				}.bind(this)
+			});
+		},
