@@ -1,0 +1,10 @@
+onPressReject: function (oEvent) {
+			if (!this.rejectionDialog) {
+				this.rejectionDialog = sap.ui.xmlfragment("com.sap.myWorklistApp.view.Reject", this);
+				this.getView().addDependent(this.rejectionDialog);
+			}
+			var bindingPath = oEvent.getSource().getBindingContext().getPath();
+			this.rejectionDialog.bindElement(bindingPath);
+
+			this.rejectionDialog.open();
+		},
