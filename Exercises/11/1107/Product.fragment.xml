@@ -1,0 +1,31 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+	<ResponsivePopover title="Product Details" class="sapUiPopupWithPadding">
+		<content>
+			<VBox class="sapUiSmallMargin">
+				<f:SimpleForm id="idProductForm" minWidth="1024" maxContainerCols="2" editable="false" layout="ResponsiveGridLayout" 
+					labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1">
+					<f:content>
+						<Label text="Product ID"/>
+						<Text text="{ProductId}"/>
+						<Label text="Category"/>
+						<Text text="{Category}"/>
+						<Label text="Product Text"/>
+						<Text text="{ProductName}"/>
+						<Label text="Weight"/>
+						<Text text="{WeightMeasure} {WeightUnit}"/>
+						<Label text="Price"/>
+						<Text text="{Price} {CurrencyCode}"/>
+						<Label text="Dimensions"/>
+						<Text text="{Height} X {Width} X {Depth} {DimensionUnit}"/>
+					</f:content>
+				</f:SimpleForm>
+			</VBox>
+		</content>
+		<endButton>
+			<Button text="Close" press="handleProductCloseButton"/>
+		</endButton>
+	</ResponsivePopover>
+</core:FragmentDefinition>
+
+
+
