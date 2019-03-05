@@ -1,0 +1,10 @@
+onPressApprove: function (oEvent) {
+			if (!this.approvalDialog) {
+				this.approvalDialog = sap.ui.xmlfragment("com.sap.myWorklistApp.view.Approve", this);
+				this.getView().addDependent(this.approvalDialog);
+			}
+			var bindingPath = oEvent.getSource().getBindingContext().getPath();
+			this.approvalDialog.bindElement(bindingPath);
+
+			this.approvalDialog.open();
+		},
