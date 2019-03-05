@@ -11,7 +11,7 @@ onSubmitApproval: function (oEvent) {
 				method: "POST",
 				urlParameters: oPayload,
 				success: function (oData, response) {
-					sap.m.MessageToast.show("success");
+					sap.m.MessageToast.show("Purchase Order Approved");
 					this.getView().getElementBinding().refresh(true);
 				}.bind(this),
 				error: function (oError) {
