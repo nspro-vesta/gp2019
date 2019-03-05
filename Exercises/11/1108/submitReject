@@ -1,0 +1,21 @@
+onSubmitRejection: function (oEvent) {
+			this.rejectionDialog.close();
+			var sObjectId = oEvent.getSource().getBindingContext().getProperty().PoId;
+			var oPayload = {
+				"PoId": sObjectId,
+				"Status": "RJ"
+			};
+			var oModel = this.getView().getModel();
+
+			oModel.callFunction("/PurchaseOrderApproval", {
+				method: "POST",
+				urlParameters: oPayload,
+				success: function (oData, response) {
+					sap.m.MessageToast.show("success");
+					this.getView().getElementBinding().refresh(true);
+				}.bind(this),
+				error: function (oError) {
+					
+				}.bind(this)
+			});
+		},
