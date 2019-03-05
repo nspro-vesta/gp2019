@@ -13,7 +13,7 @@ onSubmitApproval: function (oEvent) {
 				success: function (oData, response) {
 					sap.m.MessageToast.show("success");
 					this.getView().getElementBinding().refresh(true);
-				},
+				}.bind(this),
 				error: function (oError) {
 					
 				}.bind(this)
