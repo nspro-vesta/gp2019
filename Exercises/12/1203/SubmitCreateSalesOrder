@@ -1,0 +1,22 @@
+onSubmitCreate: function(oEvent){
+				var customer = sap.ui.core.Fragment.byId("idCreateSOFragment", "idCustomer").getSelectedItem().getKey();
+				var currency = sap.ui.core.Fragment.byId("idCreateSOFragment", "idCurrency").getSelectedItem().getKey();
+				
+				var oEntry = {
+					"CustomerID": customer,
+					"CurrencyCode": currency
+				};
+				
+				var oModel = this.getView().getModel();
+				oModel.create("/SalesOrderSet", oEntry, {
+					success: function(oData, oResponse){
+						sap.m.MessageToast.show("Sales Order created successfully.");
+						this._createSODialog.close();
+						this.getView().getModel().refresh(true);
+					}.bind(this),
+					error: function(oError){
+						this._createSODialog.close();
+					}.bind(this)
+				});
+				
+			},
