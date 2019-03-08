@@ -1,0 +1,34 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<Dialog title="Edit Sales Order Item">
+		<content>
+			<f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3"
+				labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+				columnsL="1" columnsM="1" singleContainerFullSize="false">
+				<f:content>
+					<Label text="Sales Order No"/>
+					<Input value="{SalesOrderID}" enabled="false"/>
+					<Label text="Item Position"/>
+					<Input value="{ItemPosition}" enabled="false"/>
+					<Select id="idProducts" selectedKey="{ProductID}" items="{/ProductSet}">
+						<items>
+							<core:Item text="{ProductID}" key="{ProductID}"/>
+						</items>
+					</Select>
+					<Label text="Quantity"/>
+					<StepInput
+							id="idQuantity"
+                            value="{Quantity}"
+                            min="1"
+                            max="10"
+                            step="1"/>
+				</f:content>
+			</f:SimpleForm>
+		</content>
+		<beginButton>
+			<Button text="Submit" press="onSubmitEdit"></Button>
+		</beginButton>
+		<endButton>
+			<Button text="Cancel" press="onCancelEdit"></Button>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>
