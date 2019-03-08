@@ -1,0 +1,26 @@
+onSubmitEdit: function(oEvent){
+				var soId = oEvent.getSource().getBindingContext().getProperty("SalesOrderID");
+				var itemPos = oEvent.getSource().getBindingContext().getProperty("ItemPosition");
+				var product = sap.ui.core.Fragment.byId("idEditFragment", "idProducts").getSelectedItem().getKey();
+				var quantity = sap.ui.core.Fragment.byId("idEditFragment", "idQuantity").getValue() + "";
+				
+				var oEntry = {
+					"SalesOrderID": soId,
+					"ItemPosition": itemPos,
+					"Quantity": quantity,
+					"ProductID": product
+				};
+				
+				var oModel = this.getView().getModel();
+				oModel.update("/SalesOrderLineItemSet(SalesOrderID='" + soId + "',ItemPosition='" + itemPos + "')", oEntry, {
+					success: function(oData, oResponse){
+						sap.m.MessageToast.show("Sales Order item updated successfully.");
+						this._editDialog.close();
+						this.getView().getElementBinding().refresh(true);
+					}.bind(this),
+					error: function(oError){
+						this._editDialog.close();
+					}.bind(this)
+				});
+				
+			},
