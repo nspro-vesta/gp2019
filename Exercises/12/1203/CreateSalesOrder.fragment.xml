@@ -5,11 +5,13 @@
 				labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
 				columnsL="1" columnsM="1" singleContainerFullSize="false">
 				<f:content>
+					<Label text="Customer"/>
 					<Select id="idCustomer" selectedKey="" items="{/BusinessPartnerSet}">
 						<items>
 							<core:Item text="{CompanyName}" key="{BusinessPartnerID}"/>
 						</items>
 					</Select>
+					<Label text="Currency"/>
 					<Select id="idCurrency" selectedKey="" items="{/VH_CurrencySet}">
 						<items>
 							<core:Item text="{Waers}" key="{Waers}"/>
@@ -27,3 +29,4 @@
 		</endButton>
 	</Dialog>
 </core:FragmentDefinition>
+
