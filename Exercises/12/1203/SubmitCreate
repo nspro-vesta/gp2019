@@ -1,0 +1,26 @@
+onSubmitCreate: function(oEvent){
+				var soId = oEvent.getSource().getBindingContext().getProperty("SalesOrderID");
+				var product = sap.ui.core.Fragment.byId("idCreateFragment", "idProducts").getSelectedItem().getKey();
+				var delDate = sap.ui.core.Fragment.byId("idCreateFragment", "idDeliveryDate").getDateValue();
+				var quantity = sap.ui.core.Fragment.byId("idCreateFragment", "idQuantity").getValue() + "";
+				
+				var oEntry = {
+					"SalesOrderID": soId,
+					"DeliveryDate": delDate,
+					"Quantity": quantity,
+					"ProductID": product
+				};
+				
+				var oModel = this.getView().getModel();
+				oModel.create("/SalesOrderLineItemSet", oEntry, {
+					success: function(oData, oResponse){
+						sap.m.MessageToast.show("Sales Order item created successfully.");
+						this._createDialog.close();
+						this.getView().getElementBinding().refresh(true);
+					}.bind(this),
+					error: function(oError){
+						this._createDialog.close();
+					}.bind(this)
+				});
+				
+			},
