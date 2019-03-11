@@ -22,15 +22,7 @@ onSubmitEdit: function (oEvent) {
 					sap.m.MessageToast.show("Sales Order item updated successfully.");
 				},
 				error: function (oError) {
-					var responseText = JSON.parse(oError.responseText);
-					
-					this.oMessageManager.addMessages(
-						new sap.ui.core.message.Message({
-							message: responseText.error.innererror.errordetails[0].message,
-							type: sap.ui.core.MessageType.Error,
-							processor: this.oMessageProcessor
-						})
-					);
+					sap.m.MessageToast.show(oError.responseText);
 				}.bind(this)
 			};
 			
