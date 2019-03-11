@@ -1,5 +1,5 @@
 onSubmitEdit: function (oEvent) {
-			this.oMessageManager.removeAllMessages();
+			
 			var soId = oEvent.getSource().getBindingContext().getProperty("SalesOrderID");
 			var itemPos = oEvent.getSource().getBindingContext().getProperty("ItemPosition");
 			var product = sap.ui.core.Fragment.byId("idEditFragment", "idProducts").getSelectedItem().getKey();
