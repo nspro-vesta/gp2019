@@ -1,0 +1,40 @@
+onSubmitEdit: function (oEvent) {
+			this.oMessageManager.removeAllMessages();
+			var soId = oEvent.getSource().getBindingContext().getProperty("SalesOrderID");
+			var itemPos = oEvent.getSource().getBindingContext().getProperty("ItemPosition");
+			var product = sap.ui.core.Fragment.byId("idEditFragment", "idProducts").getSelectedItem().getKey();
+			var quantity = sap.ui.core.Fragment.byId("idEditFragment", "idQuantity").getValue() + "";
+
+			var oEntry = {
+				"SalesOrderID": soId,
+				"ItemPosition": itemPos,
+				"Quantity": quantity,
+				"ProductID": product
+			};
+			
+			var path = "/SalesOrderLineItemSet(SalesOrderID='" + soId + "',ItemPosition='" + itemPos + "')";
+			var oModel = this.getView().getModel();
+			oModel.setUseBatch(true);
+			oModel.setDeferredGroups(["foo"]);
+			var mParameters = {
+				groupId: "foo",
+				success: function (odata, resp) {
+					sap.m.MessageToast.show("Sales Order item updated successfully.");
+				},
+				error: function (oError) {
+					var responseText = JSON.parse(oError.responseText);
+					
+					this.oMessageManager.addMessages(
+						new sap.ui.core.message.Message({
+							message: responseText.error.innererror.errordetails[0].message,
+							type: sap.ui.core.MessageType.Error,
+							processor: this.oMessageProcessor
+						})
+					);
+				}.bind(this)
+			};
+			
+			this._editDialog.close();
+			oModel.update(path, oEntry, mParameters);
+			
+		},
